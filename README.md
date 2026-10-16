@@ -4,32 +4,31 @@ Signed and notarized [Zerus](https://github.com/ufna/zerus) builds for Apple Sil
 Macs running macOS 14 or later. Zerus is an ADE for working with a fleet of AI
 coding agents across your machines.
 
-For Dev builds from successful main CI:
+For the stable release:
 
 ```sh
-brew install --cask ufna/zerus/zerus@dev
+brew install --cask ufna/zerus/zerus
 zerus-setup
 ```
 
 For the daily verified Nightly, use `ufna/zerus/zerus@nightly` instead.
-The stable `zerus` cask is not available yet; it will appear with the first
-owner-triggered signed stable release.
+For Dev builds from successful main CI, use `ufna/zerus/zerus@dev`.
 
 All channels install the same `Zerus.app` and `hgs` CLI, so install only one cask.
-Native agents are installed separately. To switch between Dev and Nightly:
+Native agents are installed separately. To switch from Dev or Nightly to Stable:
 
 ```sh
-brew uninstall --cask zerus@nightly && brew install --cask ufna/zerus/zerus@dev
-# Or switch back:
-brew uninstall --cask zerus@dev && brew install --cask ufna/zerus/zerus@nightly
+brew uninstall --cask zerus@dev && brew install --cask ufna/zerus/zerus
+# Or from Nightly:
+brew uninstall --cask zerus@nightly && brew install --cask ufna/zerus/zerus
 ```
 
-Update with `brew upgrade --cask zerus@dev` (or the installed Nightly cask).
-In current Dev builds, **Settings > Updates** checks the selected channel, shows the installed build,
+Update with `brew upgrade --cask zerus` (or the installed Nightly/Dev cask).
+**Settings > Updates** checks the selected channel, shows the installed build,
 and provides an update command and a DMG download. Installation and GUI restart
 remain explicit; native agents and tmux sessions keep running.
 
-Nightly and future Stable downloads are immutable GitHub Release assets. Dev
+Stable and Nightly downloads are immutable GitHub Release assets. Dev
 uses verified, immutable files on the existing zerus.dev mirror with bounded
 retention, without a GitHub Release per push. The publication workflows verify
 candidate provenance and public download hashes before updating the casks.
