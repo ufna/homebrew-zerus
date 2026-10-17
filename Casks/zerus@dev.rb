@@ -1,8 +1,8 @@
 cask "zerus@dev" do
-  version "0.44.1-dev.828"
-  sha256 "1a7672caea55dd15950343803351eb5d49631ea86c165e6d70957f918ef9b4c4"
+  version "0.44.1-dev.837"
+  sha256 "ab9bdb4f6232b2211d4a5c3d9afa639ad17dd2497383052b01cb3034cd5d5f2e"
 
-  url "https://zerus.dev/downloads/dev-desktop-39012902066/zerus-#{version}-macos-arm64.zip"
+  url "https://zerus.dev/downloads/dev-desktop-39016123991/zerus-#{version}-macos-arm64.zip"
   name "Zerus Dev"
   desc "Verified main build of the ADE for working with a fleet of AI coding agents"
   homepage "https://zerus.dev/"
@@ -21,12 +21,14 @@ cask "zerus@dev" do
         "com.hgdev.hgs-swarm",
         "com.hgdev.hgs-tray",
         "com.hgdev.hgs.user-session",
+        "com.hgdev.zerus-mobile-connector",
       ],
       trash:     [
         "~/Library/LaunchAgents/com.hgdev.hgs-recovery.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-swarm.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-tray.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs.user-session.plist",
+        "~/Library/LaunchAgents/com.hgdev.zerus-mobile-connector.plist",
         "~/Library/Logs/hgs",
         "~/Library/Logs/hgs-tray.log",
         "~/Library/Saved Application State/com.hgdev.hgs-tray.savedState",
