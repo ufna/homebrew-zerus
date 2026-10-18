@@ -1,8 +1,8 @@
 cask "zerus@nightly" do
-  version "0.44.0.r1558.gacbbee6.n19"
-  sha256 "ce479dbbe1f729b5bef947beeddde1140bec2ce0680151ba1e92b9538e78cbc9"
+  version "0.45.1.r1808.gb56b411.n20"
+  sha256 "6b289bfbbcb1cd8a6e1d26834ba4ecbef8d0e4a3cda61255c16322b911559920"
 
-  url "https://github.com/ufna/zerus/releases/download/nightly-39002487144/zerus-#{version}-macos-arm64.zip"
+  url "https://github.com/ufna/zerus/releases/download/nightly-39097490633/zerus-#{version}-macos-arm64.zip"
   name "Zerus Nightly"
   desc "Daily build of the ADE for working with a fleet of AI coding agents"
   homepage "https://zerus.dev/"
@@ -21,12 +21,14 @@ cask "zerus@nightly" do
         "com.hgdev.hgs-swarm",
         "com.hgdev.hgs-tray",
         "com.hgdev.hgs.user-session",
+        "com.hgdev.zerus-mobile-connector",
       ],
       trash:     [
         "~/Library/LaunchAgents/com.hgdev.hgs-recovery.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-swarm.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-tray.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs.user-session.plist",
+        "~/Library/LaunchAgents/com.hgdev.zerus-mobile-connector.plist",
         "~/Library/Logs/hgs",
         "~/Library/Logs/hgs-tray.log",
         "~/Library/Saved Application State/com.hgdev.hgs-tray.savedState",
