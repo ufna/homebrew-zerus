@@ -1,6 +1,6 @@
 cask "zerus" do
-  version "0.44.0"
-  sha256 "b9995bc23a46eed79137e75910e3e1d7e579fd342ffd52d8e1171a2fcd2a4f79"
+  version "0.45.0"
+  sha256 "7be160cf5a416b29ef546fdc5bdd329e415a716f9a0d650d44e32a5864c4c763"
 
   url "https://github.com/ufna/zerus/releases/download/v#{version}/zerus-#{version}-macos-arm64.zip"
   name "Zerus"
@@ -21,12 +21,14 @@ cask "zerus" do
         "com.hgdev.hgs-swarm",
         "com.hgdev.hgs-tray",
         "com.hgdev.hgs.user-session",
+        "com.hgdev.zerus-mobile-connector",
       ],
       trash:     [
         "~/Library/LaunchAgents/com.hgdev.hgs-recovery.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-swarm.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs-tray.plist",
         "~/Library/LaunchAgents/com.hgdev.hgs.user-session.plist",
+        "~/Library/LaunchAgents/com.hgdev.zerus-mobile-connector.plist",
         "~/Library/Logs/hgs",
         "~/Library/Logs/hgs-tray.log",
         "~/Library/Saved Application State/com.hgdev.hgs-tray.savedState",
