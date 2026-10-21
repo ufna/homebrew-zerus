@@ -1,6 +1,6 @@
 cask "zerus" do
-  version "0.45.1"
-  sha256 "e5c83700bf4c2a1cf11e89316af1ca928ce96be04a1190fb09a35e9f0b9b4a44"
+  version "0.46.0"
+  sha256 "4ac21100052cf0b7422dc1416762d85161de25295acd510553b2a0a64c9462c8"
 
   url "https://github.com/ufna/zerus/releases/download/v#{version}/zerus-#{version}-macos-arm64.zip"
   name "Zerus"
