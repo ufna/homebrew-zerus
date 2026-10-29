@@ -1,8 +1,8 @@
 cask "zerus@nightly" do
-  version "0.47.0.r2845.g0a6fa30.n30"
-  sha256 "7884f54c013cdd2c067a7b52b3ed46c102ac4b4a662b7362dbf0b3d242880ad8"
+  version "0.47.0.r3133.g7967641.n31"
+  sha256 "2bde2b2ac1eaa194b4cbbb4d96d58199427142ed2b44409a1b78f61b8f99518f"
 
-  url "https://github.com/ufna/zerus/releases/download/nightly-40639506055/zerus-#{version}-macos-arm64.zip"
+  url "https://github.com/ufna/zerus/releases/download/nightly-40825403150/zerus-#{version}-macos-arm64.zip"
   name "Zerus Nightly"
   desc "Daily build of the ADE for working with a fleet of AI coding agents"
   homepage "https://zerus.dev/"
