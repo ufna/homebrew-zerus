@@ -1,8 +1,8 @@
 cask "zerus@dev" do
-  version "0.47.1-dev.1685"
-  sha256 "6766fc6a599d0af6874a58c52e1d6fd29d4c01a773d4cbeea89fd4fbeb4f7adf"
+  version "0.47.1-dev.1767"
+  sha256 "caf0a861ac1b4a088d11fb5116f897a6084fb337cf8a6f724f8d2d6a273f061a"
 
-  url "https://zerus.dev/downloads/dev-desktop-41329489015/zerus-#{version}-macos-arm64.zip"
+  url "https://zerus.dev/downloads/dev-desktop-41439985447/zerus-#{version}-macos-arm64.zip"
   name "Zerus Dev"
   desc "Verified main build of the ADE for working with a fleet of AI coding agents"
   homepage "https://zerus.dev/"
@@ -15,24 +15,6 @@ cask "zerus@dev" do
   app "Zerus.app"
   binary "#{appdir}/Zerus.app/Contents/MacOS/hgs"
   binary "#{appdir}/Zerus.app/Contents/Resources/bin/zerus-setup"
-
-  zap launchctl: [
-        "com.hgdev.hgs-recovery",
-        "com.hgdev.hgs-swarm",
-        "com.hgdev.hgs-tray",
-        "com.hgdev.hgs.user-session",
-        "com.hgdev.zerus-mobile-connector",
-      ],
-      trash:     [
-        "~/Library/LaunchAgents/com.hgdev.hgs-recovery.plist",
-        "~/Library/LaunchAgents/com.hgdev.hgs-swarm.plist",
-        "~/Library/LaunchAgents/com.hgdev.hgs-tray.plist",
-        "~/Library/LaunchAgents/com.hgdev.hgs.user-session.plist",
-        "~/Library/LaunchAgents/com.hgdev.zerus-mobile-connector.plist",
-        "~/Library/Logs/hgs",
-        "~/Library/Logs/hgs-tray.log",
-        "~/Library/Saved Application State/com.hgdev.hgs-tray.savedState",
-      ]
 
   caveats <<~EOS
     Run this once as your user, without sudo:
