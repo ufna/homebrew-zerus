@@ -1,8 +1,8 @@
 cask "zerus@dev" do
-  version "0.49.1-dev.2249"
-  sha256 "fdfdfa09f5a908f2d6c48d2ed2ec6f44c81db114c6f8c895d5cc30925524cb29"
+  version "0.49.1-dev.2255"
+  sha256 "8c344952798b996de891cdbae955f5890b4282c9915b423b7e77d586c02302f6"
 
-  url "https://zerus.dev/downloads/dev-desktop-42399814204/zerus-#{version}-macos-arm64.zip"
+  url "https://zerus.dev/downloads/dev-desktop-42402122172/zerus-#{version}-macos-arm64.zip"
   name "Zerus Dev"
   desc "Verified main build of the ADE for working with a fleet of AI coding agents"
   homepage "https://zerus.dev/"
